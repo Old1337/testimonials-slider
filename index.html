@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Sass/main.css" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+
+    <title>testimonials slider</title>
+  </head>
+  <body>
+    <main class="main container">
+      <section class="slider container">
+        <img class="slider_bg" src="images/pattern-bg.svg" alt="" />
+        <div class="slider_images">
+          <img
+            class="slider_image active"
+            src="images/image-tanya.jpg"
+            alt=""
+          />
+          <img class="slider_image" src="images/image-john.jpg" alt="" />
+        </div>
+        <div class="slider_buttons">
+          <button
+            class="slider_button previous"
+            aria-label="click on the button to move to the previous slider"
+            class="slider_previous"
+          >
+            <img src="images/icon-prev.svg" alt="" />
+          </button>
+
+          <button
+            class="slider_button next"
+            aria-label="click on the button to move to the next slider"
+            class="slider_next"
+          >
+            <img src="images/icon-next.svg" alt="" />
+          </button>
+        </div>
+      </section>
+      <div class="slider-text">
+        <div class="slider_quote">
+          <q class="slider_q active">
+            I’ve been interested in coding for a while but never taken the jump,
+            until now. I couldn’t recommend this course enough. I’m now in the
+            job of my dreams and so excited about the future.</q
+          >
+          <q class="slider_q">
+            If you want to lay the best foundation possible I’d recommend taking
+            this course. The depth the instructors go into is incredible. I now
+            feel so confident about starting up as a professional developer.</q
+          >
+        </div>
+        <div class="slider-info">
+          <div class="slider-information active">
+            <p class="slider-info_name">Tanya Sinclair</p>
+            <p class="slider-info_job">UX Enginner</p>
+          </div>
+          <div class="slider-information">
+            <p class="slider-info_name">John Tarkpor</p>
+            <p class="slider-info_job">Junior Front-end Developer</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="Javascript/main.js" type="module"></script>
+  </body>
+</html>

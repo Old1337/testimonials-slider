@@ -1,0 +1,19 @@
+/* ======= Import base files ======= */
+
+@import "base/variables";
+@import "base/placeholders";
+@import "base/mixin";
+
+/* ======= Import core files ======= */
+
+@import "core/reset";
+
+/* ======= Import components files ======= */
+
+@import "components/buttons";
+
+/* ======= Import layout files ======= */
+
+@import "layout/layout";
+@import "layout/slider-images";
+@import "layout/breakpoints";

@@ -1,0 +1,62 @@
+@include respond-to("medium") {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+  }
+
+  .slider {
+    position: relative;
+    margin: 7rem 0rem;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+
+    &_bg {
+      width: 37rem;
+    }
+    &_images {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    &-text {
+      position: relative;
+      right: -7rem;
+      text-align: left;
+      width: 99rem;
+    }
+    &_quote {
+      background: url(../../images/pattern-quotes.svg) no-repeat top left 15%;
+      background-size: 5rem;
+      position: relative;
+      height: 15rem;
+    }
+    &_q {
+      font-size: 1.5rem;
+    }
+
+    &_buttons {
+      left: 30%;
+    }
+    &-information {
+      display: flex;
+      gap: 0.5rem;
+    }
+  }
+}
+
+@include respond-to("large") {
+  .slider_quote {
+    height: 15rem;
+  }
+  .slider_q {
+    font-size: 2rem;
+  }
+}
