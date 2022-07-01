@@ -488,7 +488,7 @@ a {
     width: 99rem;
   }
   .slider_quote {
-    background: url(../../images/pattern-quotes.svg) no-repeat top left 15%;
+    background: url(../images/pattern-quotes.svg) no-repeat top left 15%;
     background-size: 5rem;
     position: relative;
     height: 15rem;
