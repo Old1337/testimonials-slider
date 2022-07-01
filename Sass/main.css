@@ -264,7 +264,6 @@ summary {
   display: list-item;
 }
 
-/* ======= Import components files ======= */
 /* ======= Import layout files ======= */
 body {
   font-family: "Inter", sans-serif;
@@ -510,7 +509,7 @@ a {
 
 @media (min-width: 1200px) {
   .slider_quote {
-    height: 15rem;
+    height: 17rem;
   }
   .slider_q {
     font-size: 2rem;
