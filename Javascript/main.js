@@ -7,14 +7,14 @@ const sliderInfo = document.querySelectorAll(".slider-information");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".previous");
 
+const imgLength = sliderImage.length - 1;
+
 let sliderIndex = 0;
 
 nextBtn.onclick = () => {
-  const imgLength = sliderImage.length - 1;
-
   sliderIndex++;
 
-  sliderIndex = sliderIndex > imgLength ? imgLength : sliderIndex++;
+  sliderIndex = sliderIndex > imgLength ? 0 : sliderIndex++;
 
   updateSlider();
 };
@@ -22,7 +22,7 @@ nextBtn.onclick = () => {
 prevBtn.onclick = () => {
   sliderIndex--;
 
-  sliderIndex = sliderIndex < 0 ? 0 : sliderIndex--;
+  sliderIndex = sliderIndex < 0 ? imgLength : sliderIndex--;
 
   updateSlider();
 };
